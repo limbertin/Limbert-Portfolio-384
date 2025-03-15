@@ -17,15 +17,15 @@ const Hero = () => {
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Where creativity meets technology. I specialize in graphic design, web design, video production, and IT consulting. With over 14 years of experience, I create compelling visuals, engaging websites, dynamic multimedia, and reliable tech solutions tailored for your success.
           </p>
-          <div className="flex gap-4 justify-center">
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-primary px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all"
-            >
-              <Link to="/contact">Contact Me Today</Link>
-            </motion.button>
-          </div>
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block"
+          >
+            <Link to="/contact" className="bg-secondary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all inline-block">
+              Contact Me Today
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
